@@ -1,0 +1,109 @@
+/* ==== Base Reset ==== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdf6ec;
+  color: #2c2c2c;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* ==== Header ==== */
+.site-header {
+  text-align: center;
+  position: relative;
+}
+.logo-area {
+  margin-bottom: 1rem;
+}
+.logo-img {
+  width: 80px;
+  height: auto;
+  margin: 1rem auto;
+}
+.site-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #2c2c2c;
+}
+.site-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+}
+
+/* ==== Navigation ==== */
+.menu-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #2c2c2c;
+  cursor: pointer;
+}
+.main-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #4d908e;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+.main-nav.open {
+  display: flex;
+}
+
+/* ==== Welcome Section ==== */
+.main-content {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+.welcome {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.welcome h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ==== Articles ==== */
+.articles article {
+  border-top: 1px solid #ccc;
+  padding: 1.5rem 0;
+}
+.articles h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+.articles .date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+.articles p {
+  font-size: 1rem;
+  color: #333;
+}
+.logo-img-full {
+  width: 300px;
+  max-width: 90vw;
+  height: auto;
+  margin: 2.5rem auto 1rem;
+  display: block;
+}

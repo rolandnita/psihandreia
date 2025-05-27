@@ -1,119 +1,56 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Acasă | PsiAndreia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Website PsiAndreia – Alege versiunea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #fdfcf8;
+      background-color: #fdf6ec;
       color: #2c2c2c;
-      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-    }
-    header, footer {
-      background-color: #ecebe6;
-      padding: 1rem 2rem;
       text-align: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #4d908e;
-      font-weight: 500;
-    }
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
-      color: #4d908e;
-      letter-spacing: 1px;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      text-align: center;
+      padding: 4rem 1rem;
     }
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 2rem;
     }
-    .hero-text {
-      font-size: 1.15rem;
-      line-height: 1.8;
+    .versions {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 400px;
+      margin: auto;
     }
-    .testimonial {
-      margin: 2rem 0;
-      padding: 1rem;
-      border-left: 4px solid #4d908e;
-      font-style: italic;
-      background: #f0eee8;
-    }
-    nav.main {
-      margin: 3rem 0;
-    }
-    nav.main a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.9rem 1.6rem;
+    a.version-link {
+      display: block;
       background-color: #4d908e;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
-      font-size: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 1.1rem;
       transition: background-color 0.3s;
     }
-    nav.main a:hover {
-      background-color: #3b746f;
-    }
-    footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #555;
+    a.version-link:hover {
+      background-color: #3a746f;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="logo">psiandreia</div>
-  <nav>
-    <a href="index.html">Acasă</a>
-    <a href="despre.html">Despre</a>
-    <a href="servicii.html">Servicii</a>
-    <a href="programare.html">Programează-te</a>
-    <a href="contact.html">Contact</a>
-    <a href="jocuri.html">Jocuri</a>
-  </nav>
-</header>
+  <h1>Website PsiAndreia</h1>
+  <p>Alege una dintre cele două variante pentru a o explora:</p>
 
-<main>
-  <h1>Bine ai venit</h1>
-  <p class="hero-text">
-    Sunt psihoterapeut și te pot însoți într-un proces de redescoperire, echilibru emoțional și reconectare cu sinele.
-    Aici vei găsi un spațiu cald și sigur pentru a începe o călătorie interioară autentică.
-  </p>
-
-  <div class="testimonial">
-    „Am simțit că cineva chiar mă ascultă. A fost începutul unei schimbări reale.”
+  <div class="versions">
+    <a href="v1/" class="version-link">Versiunea 1 – Clasică</a>
+    <a href="v2/" class="version-link">Versiunea 2 – Modernă (cu meniu hamburger)</a>
   </div>
-
-  <nav class="main">
-    <a href="despre.html">Despre</a>
-    <a href="servicii.html">Servicii</a>
-    <a href="programare.html">Programează-te</a>
-    <a href="contact.html">Contact</a>
-    <a href="jocuri.html">Jocuri</a>
-  </nav>
-</main>
-
-<footer>
-  &copy; 2025 psiandreia.ro
-</footer>
 
 </body>
 </html>
