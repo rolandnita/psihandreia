@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking – Andreia Nita</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+    }
+    form button {
+      background-color: #4d908e;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    form button:hover {
+      background-color: #3a746f;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo-area">
+      <img src="../assets/images/gestalt_logo.png" alt="Andreia Nita – Gestalt Psychotherapy" class="logo-img-full">
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="../index.html">Home</a>
+      <a href="../about/">About</a>
+      <a href="../services/">Services</a>
+      <a href="../booking/">Booking</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="welcome">
+      <h2>Book a Session</h2>
+      <form action="https://formspree.io/f/mbloenqa" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone" />
+        <textarea name="message" rows="5" placeholder="A short note about your request..."></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>
