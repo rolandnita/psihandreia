@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Despre – Andreia Niță</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    .about-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 3rem auto;
+    }
+    @media (min-width: 768px) {
+      .about-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+    .about-photo img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    }
+    .about-text {
+      flex: 1;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo-area">
+      <img src="../assets/images/gestalt_logo.png" alt="Andreia Niță – Psihoterapie Gestalt" class="logo-img-full">
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="../index.html">Acasă</a>
+      <a href="../about/">Despre</a>
+      <a href="../services/">Servicii</a>
+      <a href="../booking/">Programează-te</a>
+      <a href="../contact/">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main-content fade-in">
+    <section class="welcome">
+      <h2>Despre mine</h2>
+      <div class="decor-line"></div>
+
+      <div class="about-wrapper">
+        <div class="about-photo">
+          <img src="../assets/images/poza_terapeut.jpeg" alt="Andreia Niță">
+        </div>
+
+        <div class="about-text">
+          <p>
+            Sunt psihoterapeut în formare în abordarea Gestalt, cu o viziune umanistă și relațională asupra procesului terapeutic. Cred într-un spațiu de lucru cald, empatic, în care clientul poate explora cu încredere ceea ce simte și trăiește în prezent.
+          </p>
+          <p>
+            Am absolvit Facultatea de Psihologie din cadrul Universității din București, urmată de un master în psihologia cuplului și a copilului. Sunt în formare continuă în psihoterapie Gestalt și am participat la mai multe școli de vară și cursuri de specializare în domeniul psihologiei clinice și al dezvoltării personale.
+          </p>
+          <p>
+            Lucrez cu adolescenți, tineri și adulți, individual sau în grupuri, atât în format online cât și în cabinet, susținând parcursul fiecăruia către o viață mai conștientă și autentică.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>

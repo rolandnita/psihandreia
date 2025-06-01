@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Booking – Andreia Nita</title>
+  <title>Programare – Andreia Niță</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
@@ -36,28 +36,30 @@
 
   <header class="site-header">
     <div class="logo-area">
-      <img src="../assets/images/gestalt_logo.png" alt="Andreia Nita – Gestalt Psychotherapy" class="logo-img-full">
+      <img src="../assets/images/gestalt_logo.png" alt="Andreia Niță – Psihoterapie Gestalt" class="logo-img-full">
     </div>
 
     <button class="menu-toggle" id="menuToggle">&#9776;</button>
     <nav class="main-nav" id="mainNav">
-      <a href="../index.html">Home</a>
-      <a href="../about/">About</a>
-      <a href="../services/">Services</a>
-      <a href="../booking/">Booking</a>
+      <a href="../index.html">Acasă</a>
+      <a href="../about/">Despre</a>
+      <a href="../services/">Servicii</a>
+      <a href="../booking/">Programează-te</a>
       <a href="../contact/">Contact</a>
     </nav>
   </header>
 
-  <main class="main-content">
+  <main class="main-content fade-in">
     <section class="welcome">
-      <h2>Book a Session</h2>
+      <h2>Programează o ședință</h2>
+      <div class="decor-line"></div>
+
       <form action="https://formspree.io/f/mbloenqa" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="tel" name="phone" placeholder="Phone" />
-        <textarea name="message" rows="5" placeholder="A short note about your request..."></textarea>
-        <button type="submit">Submit</button>
+        <input type="text" name="nume" placeholder="Nume complet" required />
+        <input type="email" name="email" placeholder="Adresă de email" required />
+        <input type="tel" name="telefon" placeholder="Telefon (opțional)" />
+        <textarea name="mesaj" rows="5" placeholder="Scurtă descriere a motivului programării..."></textarea>
+        <button type="submit">Trimite cererea</button>
       </form>
     </section>
   </main>

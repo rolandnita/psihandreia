@@ -1,56 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Website PsiAndreia – Alege versiunea</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fdf6ec;
-      color: #2c2c2c;
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    .versions {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      max-width: 400px;
-      margin: auto;
-    }
-    a.version-link {
-      display: block;
-      background-color: #4d908e;
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      border-radius: 8px;
-      font-weight: 500;
-      font-size: 1.1rem;
-      transition: background-color 0.3s;
-    }
-    a.version-link:hover {
-      background-color: #3a746f;
-    }
-  </style>
+  <title>Andreia Niță – Psihoterapie Gestalt</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <h1>Website PsiAndreia</h1>
-  <p>Alege una dintre cele două variante pentru a o explora:</p>
+  <header class="site-header">
+    <div class="logo-area">
+      <img src="assets/images/gestalt_logo.png" alt="Andreia Niță – Psihoterapie Gestalt" class="logo-img-full">
+    </div>
 
-  <div class="versions">
-    <a href="v1/" class="version-link">Versiunea 1 – Clasică</a>
-    <a href="v2/" class="version-link">Versiunea 2 – Modernă (cu meniu hamburger)</a>
-  </div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Acasă</a>
+      <a href="about/">Despre</a>
+      <a href="services/">Servicii</a>
+      <a href="booking/">Programează-te</a>
+      <a href="contact/">Contact</a>
+    </nav>
+  </header>
 
+  <main class="main-content fade-in">
+    <section class="welcome">
+      <h2>Bine ai venit</h2>
+      <div class="decor-line"></div>
+      <p>Spațiul tău pentru autoexplorare, claritate și conexiune.</p>
+      <blockquote style="font-style: italic; margin-top: 1.5rem; color: #555;">
+        „Schimbarea apare atunci când cineva devine ceea ce este, nu când încearcă să devină ceea ce nu este.”<br>
+        — Arnold Beisser (teoretician Gestalt)
+      </blockquote>
+    </section>
+
+<section class="articles">
+  <h2>Articole recente</h2>
+  <div class="decor-line"></div>
+
+  <article class="card">
+    <h3>„Zorba Grecul” – O invitație la trăirea vieții în carne și oase</h3>
+    <p class="date">24 aprilie 2024</p>
+    <p>
+      Reflecții din perspectiva unui psihoterapeut gestalt. Cartea lui Kazantzakis este o întâlnire profundă între viața viscerală și cea gândită...
+    </p>
+    <p><a href="articles/zorba.html">Citește mai mult →</a></p>
+  </article>
+
+  <!-- Alte articole, dacă ai -->
+</section>
+
+  </main>
+
+  <script src="assets/js/menu.js"></script>
 </body>
 </html>
